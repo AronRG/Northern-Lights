@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Northern Lights - скандинавское кафе с кофе, выпечкой и атмосферой северного вечера.">
+  <title>Northern Lights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Главная навигация">
+      <a class="logo" href="#home" aria-label="Northern Lights">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span>Northern Lights</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-panel">
+        <a href="#story">История</a>
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Атмосфера</a>
+        <a href="#booking">Бронь</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Northern Lights">
+      <div class="hero__photo" aria-hidden="true"></div>
+      <div class="aurora aurora--wide" aria-hidden="true"></div>
+      <div class="aurora aurora--soft" aria-hidden="true"></div>
+      <div class="snow" aria-hidden="true"></div>
+
+      <div class="hero__frame" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="container hero__inner reveal">
+        <p class="eyebrow">Est. 2026</p>
+        <h1>Northern<br>Lights</h1>
+        <p class="hero__subtitle">Тепло среди холодного города</p>
+        <div class="hero__actions">
+          <a class="hero__link hero__link--primary" href="#menu">Посмотреть меню</a>
+          <a class="hero__link" href="#booking">Забронировать столик</a>
+        </div>
+        <div class="hero__badges" aria-label="Достижения кафе">
+          <span>4.9 ★</span>
+          <span>1200+ гостей</span>
+          <span>Лучшее атмосферное кафе 2025</span>
+        </div>
+      </div>
+
+      <div class="hero__facts" aria-label="Ключевые факты">
+        <div>
+          <strong>08:00 — 23:00</strong>
+          <span>каждый день</span>
+        </div>
+        <div>
+          <strong>Авторский кофе</strong>
+          <span>северные рецепты</span>
+        </div>
+        <div>
+          <strong>Свежая выпечка</strong>
+          <span>корица и ягоды</span>
+        </div>
+      </div>
+      <p class="hero__side">N 59° / зимний вечер / теплые окна</p>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="container story__grid">
+        <div class="story__copy reveal">
+          <p class="eyebrow">История</p>
+          <h2>Здесь город становится тише.</h2>
+          <p>Скандинавское кафе для спокойных встреч, работы и неспешных вечеров.</p>
+          <p>Мы вдохновлялись маленькими кофейнями Норвегии и Финляндии. Местами, где зимой хочется задержаться чуть дольше обычного.</p>
+        </div>
+        <figure class="story__image story__image--main reveal">
+          <img src="assets/brand-corner.png" alt="Уютный стол у большого зимнего окна">
+          <figcaption>Теплый свет внутри</figcaption>
+        </figure>
+        <figure class="story__image story__image--small reveal">
+          <img src="assets/brand-hero.png" alt="Северное сияние за окнами кафе">
+          <figcaption>
+            <span>Северное сияние за окном</span>
+            <strong>Панорамные окна с видом на зимний город и северное небо.</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Меню</p>
+          <h2>Северные вкусы</h2>
+        </div>
+
+        <div class="menu-atmosphere">
+          <figure class="menu-scene reveal">
+            <img src="assets/brand-menu.png" alt="Кофе, выпечка и тост на деревянном столе у зимнего окна">
+            <figcaption>Подача при свечах</figcaption>
+          </figure>
+          <div class="menu-list reveal">
+            <article>
+              <span>Кофе</span>
+              <h3>Северный латте</h3>
+              <p>Ваниль, карамель, щепотка соли.</p>
+              <strong>290 ₽</strong>
+            </article>
+            <article>
+              <span>Кофе</span>
+              <h3>Капучино Сияние</h3>
+              <p>Корица и лесной орех.</p>
+              <strong>260 ₽</strong>
+            </article>
+            <article>
+              <span>Теплое</span>
+              <h3>Зимний какао</h3>
+              <p>Маршмеллоу и сливки.</p>
+              <strong>280 ₽</strong>
+            </article>
+            <article>
+              <span>Выпечка</span>
+              <h3>Булочка с корицей</h3>
+              <p>Корица, кардамон, глазурь.</p>
+              <strong>220 ₽</strong>
+            </article>
+            <article>
+              <span>Десерт</span>
+              <h3>Ягодный тарт</h3>
+              <p>Северные ягоды и нежный крем.</p>
+              <strong>310 ₽</strong>
+            </article>
+            <article>
+              <span>Еда</span>
+              <h3>Тост с лососем</h3>
+              <p>Ржаной хлеб и сливочный сыр.</p>
+              <strong>430 ₽</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery" aria-label="Стиль жизни Northern Lights">
+      <article class="gallery-panel gallery-panel--wide reveal">
+        <img src="assets/brand-interior.png" alt="Скандинавский интерьер кафе с большими окнами">
+          <span>Тишина и дерево</span>
+      </article>
+      <article class="gallery-panel reveal">
+        <img src="assets/brand-corner.png" alt="Мягкий свет лампы у зимнего окна">
+        <span>Мягкий свет</span>
+      </article>
+      <article class="gallery-panel reveal">
+        <img src="assets/brand-hero.png" alt="Большие окна кафе и северное сияние">
+        <span>Зимние окна</span>
+      </article>
+      <article class="gallery-panel gallery-panel--tall reveal">
+        <img src="assets/brand-interior.png" alt="Деревянный интерьер и мягкий свет">
+        <span>Медленный вечер</span>
+      </article>
+    </section>
+
+    <section class="reviews section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Отзывы</p>
+          <h2>Тихие причины вернуться</h2>
+        </div>
+        <div class="review-row">
+          <article class="review-card reveal">
+            <p>“Будто попала в маленькое кафе где-то в Норвегии. За окном снег, внутри дерево, свечи и очень хороший латте.”</p>
+            <span>Алина</span>
+          </article>
+          <article class="review-card reveal">
+            <p>“Капучино Сияние идеально попало в настроение. Темно, спокойно, красиво, хочется говорить тише.”</p>
+            <span>Максим</span>
+          </article>
+          <article class="review-card reveal">
+            <p>“Булочка с корицей и мягкий свет у окна — мой новый зимний ритуал после работы.”</p>
+            <span>Екатерина</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking section" id="booking">
+      <div class="booking__image" aria-hidden="true"></div>
+      <div class="container booking__grid">
+        <div class="booking__copy reveal">
+          <p class="eyebrow">Бронирование</p>
+          <h2>Столик у окна</h2>
+          <p>Один вечер. Теплый свет. Снег за стеклом.</p>
+        </div>
+        <form class="booking-form reveal">
+          <label>Имя<input type="text" name="name" placeholder="Анна" required></label>
+          <label>Телефон<input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required></label>
+          <label>Дата<input type="date" name="date" required></label>
+          <label>Время<input type="time" name="time" required></label>
+          <label>Гостей<input type="number" name="guests" min="1" max="12" value="2" required></label>
+          <button class="btn" type="submit">Забронировать</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div class="contacts__visual reveal">
+        <img src="assets/brand-interior.png" alt="Фасад и интерьер Northern Lights вечером">
+          <div class="contacts__plate">
+            <span>Северная, 14</span>
+            <strong>Northern Lights</strong>
+          </div>
+        </div>
+        <div class="contacts__content reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2>Найти тепло просто</h2>
+          <div class="contact-list">
+            <div>
+              <span>Адрес</span>
+              <strong>ул. Северная, 14</strong>
+            </div>
+            <div>
+              <span>Телефон</span>
+              <strong>+7 (999) 123-45-67</strong>
+            </div>
+            <div>
+              <span>Время работы</span>
+              <strong>ежедневно 08:00 — 23:00</strong>
+            </div>
+          </div>
+          <a class="route-btn" href="#booking">Связаться для брони</a>
+          <div class="map-panel" aria-label="Мини-карта района">
+            <span class="map-line map-line--one"></span>
+            <span class="map-line map-line--two"></span>
+            <span class="map-line map-line--three"></span>
+            <span class="map-line map-line--four"></span>
+            <span class="map-line map-line--five"></span>
+            <div class="map-pin">
+              <span></span>
+              <strong>Northern Lights</strong>
+              <small>ул. Северная, 14</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Northern Lights</span>
+      <div>
+        <a href="#">Instagram</a>
+        <a href="#">VK</a>
+        <a href="#">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Наверх">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
