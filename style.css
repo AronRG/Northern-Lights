@@ -1100,6 +1100,13 @@ h3 {
 @media (max-width: 980px) {
   .nav-toggle { display: block; }
 
+  .aurora,
+  .snow {
+    display: none;
+    animation: none;
+    filter: none;
+  }
+
   .nav-panel {
     position: absolute;
     top: calc(100% + 10px);
@@ -1115,6 +1122,56 @@ h3 {
     transform: translateY(-10px);
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .site-header.is-scrolled,
+  .nav-panel,
+  .hero__link,
+  .hero__badges span,
+  .review-card,
+  .booking-form,
+  .contacts__content,
+  .map-panel {
+    backdrop-filter: none;
+  }
+
+  .site-header.is-scrolled {
+    background: rgba(2, 7, 17, 0.94);
+  }
+
+  .nav-panel {
+    background: rgba(2, 7, 17, 0.98);
+  }
+
+  .hero__link {
+    background: rgba(2, 7, 17, 0.72);
+  }
+
+  .hero__link--primary {
+    background: linear-gradient(135deg, var(--ice), var(--aurora));
+  }
+
+  .hero__badges span {
+    animation: none;
+    background: rgba(2, 7, 17, 0.64);
+  }
+
+  .review-card,
+  .booking-form,
+  .contacts__content {
+    background: rgba(8, 19, 35, 0.88);
+  }
+
+  .map-panel {
+    background:
+      radial-gradient(circle at 62% 42%, rgba(111, 240, 198, 0.16), transparent 20%),
+      linear-gradient(135deg, rgba(11, 27, 48, 0.96), rgba(2, 7, 17, 0.98));
+  }
+
+  .map-panel::before {
+    animation: none;
+    filter: none;
+    opacity: 0.45;
   }
 
   .nav-panel.is-open {
@@ -1165,6 +1222,65 @@ h3 {
 
   .review-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .aurora,
+  .snow {
+    display: none;
+    animation: none;
+    filter: none;
+  }
+
+  .site-header.is-scrolled,
+  .nav-panel,
+  .hero__link,
+  .hero__badges span,
+  .review-card,
+  .booking-form,
+  .contacts__content,
+  .map-panel {
+    backdrop-filter: none;
+  }
+
+  .site-header.is-scrolled {
+    background: rgba(2, 7, 17, 0.94);
+  }
+
+  .nav-panel {
+    background: rgba(2, 7, 17, 0.98);
+  }
+
+  .hero__link {
+    background: rgba(2, 7, 17, 0.72);
+  }
+
+  .hero__link--primary {
+    background: linear-gradient(135deg, var(--ice), var(--aurora));
+  }
+
+  .hero__badges span {
+    animation: none;
+    background: rgba(2, 7, 17, 0.64);
+  }
+
+  .review-card,
+  .booking-form,
+  .contacts__content {
+    background: rgba(8, 19, 35, 0.88);
+  }
+
+  .map-panel {
+    background:
+      radial-gradient(circle at 62% 42%, rgba(111, 240, 198, 0.16), transparent 20%),
+      linear-gradient(135deg, rgba(11, 27, 48, 0.96), rgba(2, 7, 17, 0.98));
+  }
+
+  .map-panel::before {
+    animation: none;
+    filter: none;
+    opacity: 0.45;
   }
 }
 
