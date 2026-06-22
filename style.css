@@ -1202,10 +1202,10 @@ h3 {
     font-size: 48px;
   }
 
-  .hero__subtitle {
+  .hero .hero__subtitle {
     max-width: 320px;
-    font-size: 19px;
-    line-height: 1.25;
+    font-size: 19px !important;
+    line-height: 1.25 !important;
     font-weight: 700;
   }
 
